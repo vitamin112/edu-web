@@ -88,16 +88,25 @@ section {
 }
 .btn:hover,
 .delete-btn:hover,
-.inline-btn,
+.inline-btn:hover,
 .inline-option-btn:hover,
 .inline-delete-btn:hover,
 .option-btn:hover {
   background-color: var(--black);
   color: var(--white);
+  transition: 0.5s linear;
 }
 .flex-btn {
   display: flex;
   gap: 1rem;
+}
+.heading {
+  padding-bottom: 1.5rem;
+  border-bottom: var(--border);
+  font-size: 2.5rem;
+  color: var(--black);
+  text-decoration: capitalize;
+  margin-bottom: 2rem;
 }
 .header {
   background-color: var(--white);
@@ -276,6 +285,64 @@ section {
 .side-bar .navbar a:hover i {
   margin-right: 2rem;
 }
+.quick-select .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.quick-select .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+}
+.quick-select .box-container .box .title {
+  font-size: 2rem;
+  color: var(--black);
+}
+.quick-select .box-container .box p {
+  line-height: 1.5rem;
+  padding-top: 1.5rem;
+  color: var(--light-color);
+  font-size: 1.8rem;
+}
+.quick-select .box-container .box p span {
+  color: var(--main-color);
+}
+.quick-select .box-container .tutor {
+  text-align: center;
+}
+.quick-select .box-container .tutor p {
+  padding-bottom: 1rem;
+}
+.quick-select .box-container .box .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+.quick-select .box-container .box .flex a {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  background-color: var(--light-bg);
+  transition: 0.4s linear;
+}
+.quick-select .box-container .box .flex a i {
+  color: var(--black);
+  margin-right: 1rem;
+}
+.quick-select .box-container .box .flex a:hover {
+  background-color: var(--black);
+}
+.quick-select .box-container .box .flex a:hover i {
+  color: var(--white);
+}
+.quick-select .box-container .box .flex a:hover span {
+  color: var(--white);
+}
 /* reponsive */
 @media (max-width: 1200px) {
   body {
@@ -316,5 +383,12 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
   }
 }
