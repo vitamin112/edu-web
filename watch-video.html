@@ -18,8 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="./css/about-style.css" />
-    <title>about</title>
+    <title>watch video</title>
   </head>
   <body>
     <header class="header">
@@ -84,49 +83,103 @@
         >
       </nav>
     </div>
-    <section class="about">
-      <div class="row">
-        <div class="image">
-          <img src="./images/about-img.svg" alt="" />
+    <section class="watch-video">
+      <div class="video-details">
+        <video
+          src="./images/vid-1.mp4"
+          class="video"
+          poster="images/post-1-1.png"
+          controls
+          autoplay
+        ></video>
+        <h3 class="title">complete HTML tutorial part 1</h3>
+        <div class="info">
+          <p><i class="fas fa-calendar"></i><span>22-2-2021</span></p>
+          <p><i class="fas fa-heart"></i><span>12 likes</span></p>
         </div>
-        <div class="content">
-          <h3>Why choose us</h3>
+        <div class="tutor">
+          <img src="./images/pic-1.jpg" alt="" />
+          <div>
+            <h3>Loc Nguyen</h3>
+            <span>developer</span>
+          </div>
+        </div>
+        <form action="" class="flex">
+          <a href="" class="inline-btn">view playlist</a>
+          <button><i class="far fa-heart"></i><span>like</span></button>
+        </form>
+        <div class="description">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatibus nemo culpa ipsam, qui facilis, suscipit vel ut, soluta
-            beatae ullam provident libero autem minima?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos, libero? Cum vero nihil et, libero non consectetur,
+            maiores a voluptas, atque unde id dolor ab sapiente iste minus illum
+            qui.
           </p>
-          <a href="courses.html" class="inline-btn">our courses</a>
         </div>
       </div>
-      <div class="box-container">
+    </section>
+    <section class="comments">
+      <h1 class="heading">Add a comment</h1>
+      <form action="" class="add-comment">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          required
+          placeholder="write your comment..."
+          rows="10"
+        ></textarea>
+        <input type="text" class="inline-btn" value="add comment" />
+      </form>
+      <h1 class="heading">6 comments</h1>
+      <div class="show-comments">
         <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <div>
-            <h3>+10k</h3>
-            <span>online courses</span>
+          <div class="user">
+            <img src="./images/pic-1.jpg" alt="" />
+            <div>
+              <h3>Ng.loc</h3>
+              <span>20-1-2022</span>
+            </div>
           </div>
+          <p class="text">this is a comment :v</p>
+          <form action="" class="flex-btn">
+            <button class="inline-option-btn" type="submit">
+              edit commnet
+            </button>
+            <button class="inline-delete-btn" type="submit">
+              delete commnet
+            </button>
+          </form>
         </div>
         <div class="box">
-          <i class="fas fa-user-graduate"></i>
-          <div>
-            <h3>+23k</h3>
-            <span>brilliants students</span>
+          <div class="user">
+            <img src="./images/pic-2.jpg" alt="" />
+            <div>
+              <h3>Ng.loc</h3>
+              <span>20-1-2022</span>
+            </div>
           </div>
+          <p class="text">this is comment 2</p>
         </div>
         <div class="box">
-          <i class="fas fa-chalkboard-user"></i>
-          <div>
-            <h3>+8k</h3>
-            <span>expert teachers</span>
+          <div class="user">
+            <img src="./images/pic-4.jpg" alt="" />
+            <div>
+              <h3>Ng.Linh</h3>
+              <span>20-1-2022</span>
+            </div>
           </div>
+          <p class="text">this is comment 3</p>
         </div>
         <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <div>
-            <h3>100%</h3>
-            <span>job placement </span>
+          <div class="user">
+            <img src="./images/pic-3.jpg" alt="" />
+            <div>
+              <h3>Ng.loc</h3>
+              <span>20-1-2022</span>
+            </div>
           </div>
+          <p class="text">this is comment 2</p>
         </div>
       </div>
     </section>
