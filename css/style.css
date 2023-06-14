@@ -42,6 +42,13 @@ body {
 body.active {
   padding-left: 0;
 }
+body.dark {
+  --white: #222;
+  --black: #fff;
+  --light-color: #aaa;
+  --light-bg: #333;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
 section {
   padding: 2rem;
   max-width: 1200px;
@@ -172,6 +179,10 @@ section {
 .header .flex .icons div:hover {
   background-color: var(--black);
   color: var(--white);
+  transition: 0.5s linear;
+}
+.header .flex .icons a i {
+  transition: 0.5s linear;
 }
 #search-btn {
   display: none;
@@ -192,7 +203,7 @@ section {
 .header .flex .profile.active {
   transform: scale(1);
 }
-.header .flex .profile image {
+.header .flex .profile img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
@@ -246,7 +257,7 @@ section {
   padding: 3rem 2rem;
   text-align: center;
 }
-.side-bar .profile image {
+.side-bar .profile img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
@@ -261,6 +272,7 @@ section {
   color: var(--light-color);
   font-size: 1.6rem;
 }
+
 .side-bar .navbar {
   margin-top: 1rem;
 }
@@ -303,13 +315,15 @@ section {
   color: var(--black);
 }
 .quick-select .box-container .box p {
-  line-height: 1.5rem;
   padding-top: 1.5rem;
   color: var(--light-color);
   font-size: 1.8rem;
 }
 .quick-select .box-container .box p span {
   color: var(--main-color);
+}
+.quick-select .box-container .box a span {
+  color: var(--black);
 }
 .quick-select .box-container .tutor {
   text-align: center;
