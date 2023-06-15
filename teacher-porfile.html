@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>teacher profile</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">EDU</a>
+        <form action="" method="post" class="search-form">
+          <input
+            type="text"
+            name="search-box"
+            required
+            maxlength="100"
+            placeholder="Search..."
+          />
+          <button
+            type="submit"
+            name="search-box"
+            class="fas fa-search"
+          ></button>
+        </form>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+          <img src="images/pic-1.jpg" alt="" />
+          <h3>Ng Loc</h3>
+          <span>Student</span>
+          <a href="profile.html" class="btn">view</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="side-bar">
+      <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="profile">
+        <img src="images/pic-1.jpg" alt="" />
+        <h3>Ng Loc</h3>
+        <span>Student</span>
+        <a href="profile.html" class="btn">view</a>
+      </div>
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html"
+          ><i class="fas fa-question"></i><span>about us</span></a
+        >
+        <a href="courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>courses</span></a
+        >
+        <a href="teacher.html"
+          ><i class="fas fa-chalkboard-user"></i><span>teacher</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>contact us</span></a
+        >
+      </nav>
+    </div>
+    <section class="teacher-profile">
+      <h1 class="heading">Profile Details</h1>
+      <div class="box">
+        <div class="teacher">
+          <img src="./images/pic-4.jpg" alt="" class="item-img" />
+          <div>
+            <h3>Ng.Loc</h3>
+            <p>developer</p>
+          </div>
+        </div>
+        <div class="info">
+          <p>total playlists <span>6</span></p>
+          <p>total videos <span>12</span></p>
+          <p>total likes <span>322</span></p>
+          <p>total comments <span>76</span></p>
+        </div>
+      </div>
+      <h1 class="heading">Our Courses</h1>
+      <div class="box-container">
+        <div class="box">
+          <span>6 videos</span>
+          <img src="./images/post-1-2.png" alt="" />
+          <p class="title">complete HTML tutorial</p>
+          <a href="./watch-video.html" class="inline-btn">View playlist</a>
+        </div>
+        <div class="box">
+          <span>6 videos</span>
+          <img src="./images/post-2-2.png" alt="" />
+          <p class="title">complete css tutorial</p>
+          <a href="./watch-video.html" class="inline-btn">View playlist</a>
+        </div>
+        <div class="box">
+          <span>6 videos</span>
+          <img src="./images/post-3-2.png" alt="" />
+          <p class="title">complete js courses</p>
+          <a href="./watch-video.html" class="inline-btn">View playlist</a>
+        </div>
+        <div class="box">
+          <span>6 videos</span>
+          <img src="./images/post-2-2.png" alt="" />
+          <p class="title">complete bootstap tutorial</p>
+          <a href="./watch-video.html" class="inline-btn">View playlist</a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
