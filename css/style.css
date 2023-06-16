@@ -428,7 +428,7 @@ section {
 }
 .about .row .content h3 {
   font-size: 2.5rem;
-  color: --black;
+  color: var(--black);
 }
 .about .row .content p {
   line-height: 2.5rem;
@@ -1064,7 +1064,175 @@ section {
   font-size: 2rem;
   border-radius: 0.5rem;
   resize: none;
+  margin-bottom: 1rem;
 }
+.contact .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact .box-container .box {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.contact .box-container .box .icon {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+.contact .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 2;
+}
+.contact .box-container .box p {
+  font-size: 2rem;
+  color: var(--light-color);
+  line-height: 2;
+  word-break: break-word;
+}
+.login {
+  min-height: calc(100vh - 30rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login form {
+  display: block;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  width: 50rem;
+}
+.login form h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+.login form input {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin: 2rem 0rem;
+  background-color: var(--light-bg);
+}
+.login form p {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+.login form span {
+  color: var(--red);
+}
+.register {
+  min-height: calc(100vh - 30rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register form {
+  display: block;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  width: 50rem;
+}
+.register form h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+.register form input {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin: 2rem 0rem;
+  background-color: var(--light-bg);
+}
+.register form p {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+.register form span {
+  color: var(--red);
+}
+.profile .your-profile {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.profile .your-profile img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+.profile .your-profile h3 {
+  font-size: 3rem;
+  color: var(--black);
+  margin: 1rem 0;
+}
+.profile .your-profile p {
+  font-size: 2rem;
+  color: var(--light-color);
+}
+.profile .box-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.profile .box-container .box {
+  flex: 1 1 25rem;
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: left;
+}
+.profile .box-container .box i {
+  background-color: var(--black);
+  padding: 2rem;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+}
+.profile .box-container .box .detail {
+  font-size: 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+.profile .box-container .box .detail span {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.profile .box-container .box .detail h {
+  color: var(--main-color);
+  line-height: 2;
+}
+footer {
+  border: var(--border);
+  text-align: center;
+  background-color: var(--white);
+  padding: 3rem;
+  color: var(--light-color);
+  font-size: 2rem;
+}
+footer span {
+  color: var(--main-color);
+}
+
 /* reponsive */
 @media (max-width: 1200px) {
   body {
