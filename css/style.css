@@ -1221,6 +1221,9 @@ section {
   color: var(--main-color);
   line-height: 2;
 }
+#menu-btn {
+  display: none;
+}
 footer {
   border: var(--border);
   text-align: center;
@@ -1243,6 +1246,9 @@ footer span {
     transition: 0.2s linear;
   }
   .side-bar .close-side-bar {
+    display: inline-block;
+  }
+  #menu-btn {
     display: inline-block;
   }
 }
