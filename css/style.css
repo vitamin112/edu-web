@@ -1206,6 +1206,7 @@ section {
   padding: 2rem;
   font-size: 2.5rem;
   border-radius: 0.5rem;
+  color: var(--light-bg);
 }
 .profile .box-container .box .detail {
   font-size: 2.5rem;
